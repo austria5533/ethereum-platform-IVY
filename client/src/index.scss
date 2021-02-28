@@ -1,0 +1,133 @@
+.show-detail-btn {
+	border: none;
+	font-size: small;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.map-popup {
+	.title {
+		text-align: center;
+		font-size: medium;
+		font-weight: bold;
+		color: blueviolet;
+		margin-bottom: 0.5rem;
+	}
+
+	.subtitle {
+	}
+}
+
+.house-map-card {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 20px;
+	img {
+		height: 100%;
+		width: 40%;
+		cursor: pointer;
+	}
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 15px;
+	}
+	.title {
+		font-weight: bold;
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	.star {
+		color: #ffa726;
+	}
+	.review-container {
+		display: flex;
+		justify-self: start;
+		align-items: center;
+		.score {
+			background-color: #5392f9;
+			color: #fff;
+			height: 26px;
+			border-radius: 2px;
+			padding: 0 5px;
+			font-size: 16px;
+			font-weight: 400;
+			text-align: center;
+			position: relative;
+			float: left;
+			cursor: default;
+		}
+		.review-text {
+			padding: 0;
+			margin: 0;
+			display: block;
+			font-size: 11px;
+			font-weight: 700;
+		}
+		.review-count {
+			color: #777;
+			padding: 0;
+			margin: 0;
+			display: block;
+			font-size: 11px;
+		}
+	}
+	.wifi {
+		color: #63c355;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.bottom-right-container {
+		position: absolute;
+		right: 10px;
+		bottom: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		.price {
+			display: block;
+			font-weight: 700;
+			font-size: 18px;
+			color: #e12d2d;
+			text-align: right;
+		}
+		.price-msg {
+			display: block;
+			font-size: 10px;
+			font-weight: 400px;
+			text-align: right;
+		}
+		.order-btn {
+			position: relative;
+			display: inline-block;
+			border-color: #5392f9;
+			background-color: #fff;
+			color: #5392f9;
+			border: 1px solid;
+			max-width: 140px;
+			padding: 3px 8px;
+			border-radius: 3px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transition: background-color 0.3s ease-in-out;
+			margin-top: 11px;
+			font-size: 11px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			white-space: nowrap;
+			&:hover {
+				cursor: pointer;
+				background-color: #5392f9;
+				color: #fff;
+			}
+		}
+	}
+}
